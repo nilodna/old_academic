@@ -1,0 +1,145 @@
+/******************************************************************************
+ * Content
+ ******************************************************************************/
+
+body {
+  padding-bottom: 70px;
+  color: var(--global-text-color);
+  background-color: var(--global-bg-color);
+
+  h1, h2, h3, h4, h5, h6 {
+    scroll-margin-top: 66px;
+  }
+}
+
+body.fixed-top-nav {
+  // Add some padding for the nav-bar.
+  padding-top: 56px;
+}
+
+body.sticky-bottom-footer {
+  // Remove padding below footer.
+  padding-bottom: 0;
+}
+
+.container {
+  max-width: $max-content-width;
+}
+
+// Profile
+.profile {
+  img {
+    width: 100%;
+  }
+}
+
+// TODO: redefine content layout.
+
+
+/******************************************************************************
+ * Publications
+ ******************************************************************************/
+
+// TODO: redefine publications layout.
+
+.publications {
+    h2 {
+        color: #2698BA;
+        // border-bottom: 1px solid #2698BA;
+        // border-top: 1px solid #2698BA;
+        font-size: 32px;
+        margin-bottom: 30px;
+        // padding: 20px 0;
+        text-align: center;
+    }
+}
+
+.year { 
+    border-top: 1px solid #ccc;
+    color: #ccc;
+    margin: 0 -3em -2.5ex -2em;
+    padding-top: 1ex;
+    text-align: right;
+}
+
+.author em {
+	font-weight: bolder;
+	color: #2698BA
+}
+
+.bibliography {
+    margin-bottom: 50px;
+    margin-top: 20px;
+    list-style-type: circle;
+
+    li {
+        margin: 10px 0;
+        position: relative;
+
+        span { display: block; }
+        .title { font-weight: bolder; }
+        .author {
+            a {
+                border-bottom: 1px dashed #2698BA;
+                &:hover {
+                    border-bottom-style: solid;
+                    text-decoration: none;
+                }
+            }
+            > em {
+                border-bottom: 1px solid;
+                font-style: normal;
+            }
+        }
+        a.abstract, a.bibtex { cursor: pointer; }
+        .hidden {
+            font-size: 0.875rem;
+            max-height: 0px;
+            overflow: hidden;
+            text-align: justify;
+            -webkit-transition: 0.15s ease;
+            -moz-transition: 0.15s ease;
+            -ms-transition: 0.15s ease;
+            -o-transition: 0.15s ease;
+            transition: all 0.15s ease;
+
+            p {
+                line-height: 1.4em;
+                margin: 10px;
+            }
+            pre {
+                font-size: 1em;
+                line-height: 1.4em;
+                padding: 10px;
+            }
+        }
+        .hidden.open {
+            max-height: 100em;
+            -webkit-transition: 0.15s ease;
+            -moz-transition: 0.15s ease;
+            -ms-transition: 0.15s ease;
+            -o-transition: 0.15s ease;
+            transition: all 0.15s ease;
+        }
+        span.abstract.hidden {
+            border: dashed 1px white;
+        }
+        span.abstract.hidden.open {
+            border-color: #828282;
+        }
+    }
+    abbr {
+        position: absolute;
+            left: -7em;
+    }
+ }
+.star {
+    color: #2698BA;
+    font-style: normal;
+}
+
+/*****************************************************************************
+* Projects
+*****************************************************************************/
+
+// TODO: redefine projects layout.
